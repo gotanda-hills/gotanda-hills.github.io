@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>Gotanda hills</title>
+  </head>
+  <body>
+    <br>
+    <input type=“text” size="40" id="uuid_service" placeholder="UUID SERVICE"/>
+    <button id="get_service" onclick="getService();">ENTER</button><br>
+    <input type=“text” size="40" id="uuid_chara" placeholder="UUID CHARACTERISTIC"/>
+    <button id="get_chara" onclick="getChara();">ENTER</button><br>
+    <input type=“text” size="40" id="device_name" placeholder="DEVICE NAME"/>
+    <button id="get_device_name" onclick="getDeviceName();">ENTER</button><br>
+    <input type=“text” size="40" id="buffer_size" placeholder="buffer size (180,000)"/>
+    <button id="get_buffer_size" onclick="getBufferSize();">ENTER</button><br>
+    <!-- <input type=“text” size="20" id="send_value" placeholder="Write Value"/>
+    <button id="write" onclick="_writeValue();">ENTER</button><br><br> -->
+
+    <button id="connect" onclick="connect();">connect</button><br><br>
+
+    <button id="disconnect" onclick="disconnect();">disconnect</button><br>
+
+    <p>UUID SERVICE : </p>
+    <p id="service_value"></p><br>
+    <p>UUID CHARACTERISTIC : </p>
+    <p id="chara_value"></p><br>
+    <p>Device Name : </p>
+    <p id="display_name"></p><br>
+    <p>byte : </p>
+    <p id="received_value"></p><br>
+    <p>message : </p>
+    <p id="message"></p><br>
+
+  <script type="text/javascript" src="./ble.js"></script>
+</body>
+</html>
